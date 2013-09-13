@@ -9,17 +9,20 @@ public class Example3 {
 	
 	@JsonProperty("name")
 	private final String name;
+	/* Defining a value here will cause this not to work, e.g.
+	private final String name = "Bob";
+	*/
 
 	@JsonProperty("value")
 	private final boolean value;
 	
-	private Example3() {
+	public Example3() {
 		this.name = null;
 		this.value = false;
 	}
 	
-	public String getName() { return name; }
-	public boolean isValue() { return value; }
+	//public String getName() { return name; }
+	//public boolean isValue() { return value; }
 	
 	@Override public String toString() {
 		StringBuffer sb = new StringBuffer("[Example3 => ");

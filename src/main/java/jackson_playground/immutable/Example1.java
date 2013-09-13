@@ -8,12 +8,12 @@ import org.codehaus.jackson.annotate.JsonProperty;
 public class Example1 {
 	
 	@JsonProperty("name") 
-	private String name;
+	public String name;
 
 	@JsonProperty("value")
-	private boolean value;
+	public boolean value;
 	
-	private Example1() {
+	public Example1() {
 	}
 	
 	public String getName() { return name; }
